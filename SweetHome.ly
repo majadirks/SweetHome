@@ -38,5 +38,5 @@
   }
   
   %Generate MIDI output
-  %\midi{ \tempo 4 = 98}
+  \midi{ \tempo 4 = 98}
 }
