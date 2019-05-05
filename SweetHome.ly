@@ -39,4 +39,6 @@
   
   %Generate MIDI output
   \midi{ \tempo 4 = 98}
+
+%can you see me?
 }
