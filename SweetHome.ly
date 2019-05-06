@@ -9,6 +9,46 @@
   \relative c'' {
     \clef treble
     \key g \major
+				%Intro riff
+    \repeat volta 2 {
+      <d, fis a d>2 <e g c e> <d g b d>4. r16
+      g,16 a( b) d e( d) b a'( g)}
+    \alternative {
+      {<d fis a d>2 <e g c e> <d g b d>4. r16
+	g16 a( g) g b( g) d c'( d)}
+      {<d, fis a d>2 <e g c e> <d g b d>
+	ais16 b d g~ g4}}
+
+				%First verse
+    <<
+      {r4 f16 e8 e16~ e4 d16 d8 d16~ d8[ e]} % Big wheels keep on turnin'
+      \\
+      {\stemDown d4.. c16~ c4}
+    >>
+    r8. g16
+    a16( b) d g~ g g a,( b) %guitar riff
+    <<
+      {r4 f'16 e8 e16~ e4 e16 d8 d16~ d4} %Carry me home to see my kin
+      \\
+      {\stemDown d4.. c16~ c4}
+    >>
+    d'8 e16 g <d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
+        <<
+      {r4 f16 e8 e16~ e4 d16 b8 d16~ d4 b8} %Singin' songs about the southland
+      \\
+      {\stemDown d4.. c16~ c4}
+    >>
+    r16 g16
+    a16( b) d g~ g g a,( b) %guitar riff
+    <<
+      %Miss Alabamy once again and I think it's a sin
+      {r4 f'16 e8 e16~ e8 d d e16 d~ d8 d d e16 d~ d4}
+      \\
+      {\stemDown d4.. c16~ c4}
+    >>
+    r4
+    
+    \bar "||"  %delineate
 
 				%Piano Solo
     gis16 a fis' gis, a fis' gis, a
@@ -38,7 +78,6 @@
   }
   
   %Generate MIDI output
-  \midi{ \tempo 4 = 98}
+  %\midi{ \tempo 4 = 98}
 
-%can you see me?
 }
