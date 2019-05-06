@@ -34,7 +34,7 @@
     >>
     d'8 e16 g <d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
         <<
-      {r4 f16 e8 e16~ e4 d16 b8 d16~ d4 b8} %Singin' songs about the southland
+      {r4 f16 e8 e16~ e4 d16 c8 d16~ d4 b8} %Singin' songs about the southland
       \\
       {\stemDown d4.. c16~ c4}
     >>
@@ -47,10 +47,16 @@
       {\stemDown d4.. c16~ c4}
     >>
     r4
-    
-    \bar "||"  %delineate
+
+    %Guitar riff
+    \repeat unfold 2 {
+      e16 eis fis <a d>~ <a d> <a d> fis8
+      d16 e <g c>8 <g c> r
+      ais,16 b d g~ g4~ g2
+      }
 
 				%Piano Solo
+    \bar "||"
     gis16 a fis' gis, a fis' gis, a
     fis g e' fis, g e' fis, g
     cis, d b' cis, d b' cis, d
