@@ -53,10 +53,18 @@
       e16 eis fis <a d>~ <a d> <a d> fis8
       d16 e <g c>8 <g c> r
       ais,16 b d g~ g4~ g2
-      }
+    }
 
 				%TODO: Neil Young verse goes here
-    
+				%See Troy Nelson transcription for
+				%"Southern Man" harmonization
+    \bar "||" r1 \bar "||"
+				%Chorus
+    r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+    <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
+    r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
+    <d g b>8 <b d>16 <c e> <d f> <f a>8 <f a >16 %blue / Joplin riff
+    <e g>16 <d f> <c e> <d f> <e g> <e c'>8 <e c'>16
     
 				%Piano Solo
     \bar "||"
