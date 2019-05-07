@@ -65,6 +65,18 @@
     r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
     <d g b>8 <b d>16 <c e> <d f> <f a>8 <f a >16 %blue / Joplin riff
     <e g>16 <d f> <c e> <d f> <e g> <e c'>8 <e c'>16
+    r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+    <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
+    r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
+    <d g b>4 r4 <a c f g>4 <g c e g> %you
+
+				%Guitar solo
+    \bar "||"
+    fis'16 d a8 d4~ d16 a c ais a g a e
+    g8. g16 a e a8 r8. d16 e g a g
+    a8 r16 d,~ d dis e g a e g8 a8. g16
+    g e d e g d b8~ b16 g d8~ d16 d8.
+    \bar "||"
     
 				%Piano Solo
     \bar "||"
