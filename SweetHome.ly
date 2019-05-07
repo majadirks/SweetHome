@@ -58,13 +58,13 @@
 				%TODO: Neil Young verse goes here
 				%See Troy Nelson transcription for
 				%"Southern Man" harmonization
-    \bar "||" r1 \bar "||"
-				%Chorus
+    \bar "||" r1
+				%Chorus 1
+    \bar "||"
     r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
     <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
     r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
-    <d g b>8 <b d>16 <c e> <d f> <f a>8 <f a >16 %blue / Joplin riff
-    <e g>16 <d f> <c e> <d f> <e g> <e c'>8 <e c'>16
+    <d g b>4 r4 r2 %blue
     r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
     <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
     r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
@@ -77,7 +77,37 @@
     a8 r16 d,~ d dis e g a e g8 a8. g16
     g e d e g d b8~ b16 g d8~ d16 d8.
     \bar "||"
-    
+
+				%Verse 3
+    \repeat unfold 16 <a d>8
+    \repeat unfold 4 <a d> % Birming
+    \repeat unfold 4 <g c> % ham loves the
+    \repeat unfold 4 <g b> %governor
+    r2 %Boo, boo
+    \repeat unfold 4 <a d>8 %We all
+    \repeat unfold 4 <a c>% did what we could
+    <g b> <g b> r8 e''16 g
+    <d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>16 b, c cis
+    \repeat unfold 4 <a d>8 %Water-
+    \repeat unfold 4 <g c>8 %gate does not
+    \repeat unfold 4 <g b> %bother me
+    a'16 b d e d b a' g
+    \repeat unfold 4 <a,, d>8 %Does your
+    \repeat unfold 4 <g c> %conscience bother
+    \repeat unfold 4 <g b> %you? Tell me
+    a16 b d g e d a b
+
+				%Chorus 2
+    \bar "||"
+    r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+    <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
+    r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
+    <d g b>4 r4 r2 %blue
+    r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+    <d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
+    r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
+    <d g b>4 r4 <a c f g>4 <g c e g> %you
+
 				%Piano Solo
     \bar "||"
     gis16 a fis' gis, a fis' gis, a
