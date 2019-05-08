@@ -151,11 +151,18 @@
 
 				%First Verse
 	\repeat unfold 3 {
-	  d'8 d <a' d>8. <a d>16 c,8 c <d g d'>8. <d g d'>16
+	  d'8 d <a' d>8. <a d>16 c,8 c <d g d'>8. d16
 	  g,8 g <d' g d'>4 g,8 g <d' g d'>4
 	}
-	d8 d <a' d>8. <a d>16 c,8 c <d g d'>8. <d g d'>16
+	d8 d <a' d>8. <a d>16 c,8 c <d g d'>8. d16
 	g,8 g <d' g d'>4 g,8 g <d' g d'>8 <d g d'>16 <d g d'>
+
+				%Guitar riff
+	\repeat unfold 2 {
+	  <d d'>8[ <fis' a d>] <a,, a'>[ <fis'' a c>]
+	  <g, g'>[ <e' g c>] <c, c'>[ <e e'>16 <cis cis'>] |
+	  <d d'>8 <b b'>16 <g g'>~ <g g'>8 <g g'>8~ <g g'>2 |
+				    }
       }
     >>
   }
