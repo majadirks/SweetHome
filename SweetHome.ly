@@ -55,7 +55,7 @@
 	\repeat unfold 2 {
 	  e16 eis fis <a d>~ <a d> <a d> fis e
 	  d16 e <g c>8 <g c> e
-	  ais,16 b d g~ g16 g g,8~ g2
+	  ais,16 b d g~ g16 g <g g'>8~ <g g'>2
 	}
 	
 				%TODO: Neil Young verse goes here
@@ -64,7 +64,7 @@
 	\bar "||" r1
 				%Chorus 1
 	\bar "||"
-	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
 	<d g b>4 r4 r2 %blue
@@ -147,20 +147,20 @@
 	  g,8 g g'4 g,8 g g'4
 	}
 	d8 d d'16 a8 fis16 c8 c d'16 g,8 d16
-	g,8 g g'4 <d d'>8 <b b'>16 <g g'>~ <g g'>4
+	g,8 g g'4 <d d'>8 <b b'> <g g'>4
 
 				%First Verse
 	\repeat unfold 3 {
-	  d'8 d <a' d>8. <a d>16 c,8 c <d g d'>8. d16
-	  g,8 g <d' g d'>4 g,8 g <d' g d'>4
+	  d'8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	  g,8 g <d' g>4 g,8 g <d' g>4
 	}
-	d8 d <a' d>8. <a d>16 c,8 c <d g d'>8. d16
-	g,8 g <d' g d'>4 g,8 g <d' g d'>8 <d g d'>16 <d g d'>
+	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	g,8 g <d' g>4 g,8 g <d' g>8 <d g>16 <d g>
 
 				%Guitar riff
 	\repeat unfold 2 {
 	  <d d'>8[ <fis' a d>] <a,, a'>[ <fis'' a c>]
-	  <g, g'>[ <e' g c>] <c, c'>[ <c c'>16 <dis dis'>] |
+	  <b, b'>[ <g g'>] <e e'>[ <c c'>16 <dis dis'>] |
 	  <d d'>8[ <b b'>] <g g'>[ <d'' g b>] a,16 b d e d b a' g
 				    }
       }
@@ -168,6 +168,6 @@
   }
   
   %Generate MIDI output
-  \midi{ \tempo 4 = 98}
+  %\midi{ \tempo 4 = 98}
 
 }
