@@ -52,19 +52,24 @@
 	r4
 	
 				%Guitar riff
-	\repeat unfold 2 {
 	  e16 eis fis <a d>~ <a d> <a d> fis e
 	  d16 e <g c>8 <g c> e
-	  ais,16 b d g~ g16 g <g g'>8~ <g g'>2
-	}
+	ais,16 b d g~ g16 g <g g'>8~ <g g'>2
+	e16 eis fis <a d>~ <a d> <a d> fis e
+	  d16 e <g c>8 <g c> e
+	  ais,16 b d g~ g16 g <g g'>8~ <g g'>4 a,16( b) d8
+
+
 	
 				%TODO: Neil Young verse goes here
 				%See Troy Nelson transcription for
 				%"Southern Man" harmonization
-	\bar "||" r1
+	\bar "||"
+	<a'' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r %Heard Neil Sing
+	<g' b>4 <b d g> a,,16( b) d g~ g g a,( b)
 				%Chorus 1
 	\bar "||"
-	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
 	<d g b>4 r4 r2 %blue
@@ -159,15 +164,37 @@
 
 				%Guitar riff
 	\repeat unfold 2 {
-	  <d d'>8[ <fis' a d>] <a,, a'>[ <fis'' a c>]
-	  <b, b'>[ <g g'>] <e e'>[ <c c'>16 <dis dis'>] |
-	  <d d'>8[ <b b'>] <g g'>[ <d'' g b>] a,16 b d e d b a' g
-				    }
+	  <d d'>8[ <fis' a d> ] <a,, a'> [ <fis'' a c> ]
+	  <b, b'> [ <g g'> ] <e e'> [ <c c'>16 <dis dis'> ] |
+	  <d d'>8 [ <b b'> ] <g g'> [ <d'' g b> ]
+	  a,16 b d e d b a' g
+	}
+				%Second Verse
+	<<
+	  \new Voice = "first"
+	  {
+	    \stemDown
+	    <d d'>8[ <f' a> ] <a,, a'> [ <f'' a d> ]
+	    <g c> [ <g,, g'> ] <d' d'> [ <fis' a> ]
+	    <d g> [ <g, d'> ] <d d'> [ <fis fis'> ]
+	    <g g'> [ <fis fis'> ] <e e'> [ <dis dis'> ]
+	    
+	  }
+	  \new Voice = "second"
+	  {
+	    \stemUp
+	    \skip 8 d''16 d \skip 4 e8 \skip 4 d16 d~
+	    d8 b \skip 4.
+	  }
+	>>
+
+	\stemNeutral
+	
       }
     >>
   }
   
   %Generate MIDI output
-  %\midi{ \tempo 4 = 98}
+  \midi{ \tempo 4 = 98}
 
 }
