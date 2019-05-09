@@ -175,7 +175,7 @@
 	  {
 	    \stemDown
 	    <d d'>8[ <f' a> ] <a,, a'> [ <f'' a d> ]
-	    <g c> [ <g,, g'> ] <d' d'> [ <fis' a> ]
+	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
 	    <d g> [ <g, d'> ] <d d'> [ <fis fis'> ]
 	    <g g'> [ <fis fis'> ] <e e'> [ <dis dis'> ]
 	    
