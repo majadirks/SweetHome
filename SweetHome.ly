@@ -165,7 +165,7 @@
 				%Guitar riff
 	\repeat unfold 2 {
 	  <d d'>8[ <fis' a d> ] <a,, a'> [ <fis'' a c> ]
-	  <b, b'> [ <g g'> ] <e e'> [ <c c'>16 <dis dis'> ] |
+	  <b, b'> [ <g g'> ] <e e'> [ <c c'>16 <cis cis'> ] |
 	  <d d'>8 [ <b b'> ] <g g'> [ <d'' g b> ]
 	  a,16 b d e d b a' g
 	}
