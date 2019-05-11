@@ -12,7 +12,7 @@
 	\clef treble
 	\key g \major
 	
-	r1
+	\partial 2 r2
 				%Intro riff
 	\repeat volta 2 {
 	  <d, fis a d>2 <e g c e> <d g b d>4. r16
@@ -154,7 +154,8 @@
       \new Staff {
 	\clef "bass"
 	\key g \major
-	<f,, f'>2 <e e'>
+	
+	\partial 2 <f,, f'>4 <e e'>
 				%Intro riff
 	\repeat unfold 2 {
 	  d8 d d'16 a8 fis16 c8 c d'16 g,8 d16
