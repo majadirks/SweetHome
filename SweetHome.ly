@@ -85,7 +85,7 @@
 	r8. d'16 <f a d>16 <e a d>8 <e a c>16~ <e a c>8 <d g c>8
 	<d g c> <d g c>16 <d g c> |
 	<d g b>4 ais16 b d <g g'>~
-	<g g'> d <fis fis'> d <f f'> d <e e'> b' 
+	<g g'> d' <fis, fis'> d' <f, f'> d' <e, e'> b' 
 
 	
 				%Chorus 1
@@ -96,10 +96,12 @@
 	<d g b>8 %blue
 	\change Staff = "down"
 	\stemUp
-	\skip 16 d,,,16 [ e g ] \skip 8 \skip 2
+	\skip 16 d,,,16^"RH" [ e g ] \skip 8.
 	\change Staff = "up"
+	d''16^"RH" [ e g ] \skip 8 \skip 16 d_"RH" |
+	
 	\stemNeutral
-	r4 <f''' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
 	<d g b>4 r4 <a c f g>4 <g c e g> %you
@@ -258,14 +260,34 @@
 	d8 <d a'> <d b'>16 <d a'>8.
 	c8 <c g'> <c a'>16 [ <c g'>8 ]
 	\ottava #-1 \stemDown
-	d,16~ | d e g \skip 8.
+	d,16~ | d e g
 	\ottava #0
-	d''16 [ e g ] r16 
+	\skip 8.
+	d''16_"LH" [ e g ] \skip 16 \skip 8
+	\change Staff = "up"
+	d''16_"LH" [ e g ]
+	\change Staff = "down" r16 |
+	\stemNeutral
+				%Sweet Home Alabama
+	d,,,8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	g8 <g g'> <b b'>16 <a a'>8. |
+	\ottava #0
+				%Lord I'm coming home to you
+	d8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	<f f'>4
+	\ottava #0
+	<c' c'>
       }
     >>
   }
   
   %Generate MIDI output
-  %\midi{ \tempo 4 = 98}
+  \midi{ \tempo 4 = 98}
 
 }
