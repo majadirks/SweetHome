@@ -7,8 +7,9 @@
 
 \score {
   \relative c'' {
+    \new PianoStaff
     <<
-      \new Staff {
+      \new Staff = "up" {
 	\clef treble
 	\key g \major
 	
@@ -54,12 +55,12 @@
 	r4
 	
 				%Guitar riff
-	  e16 eis fis <a d>~ <a d> <a d> fis e
-	  d16 e <g c>8 <g c> e
-	ais,16 b d g~ g16 g <g g'>8~ <g g'>2
 	e16 eis fis <a d>~ <a d> <a d> fis e
-	  d16 e <g c>8 <g c> e
-	  ais,16 b d g~ g16 g <g g'>8~ <g g'>4 a,16( b) d8
+	d16 e <g c>8 <g c> e |
+	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
+	e,16 eis fis <a d>~ <a d> <a d> fis e
+	d16 e <g c>8 <g c> e |
+	ais,16 b d g~ g16 g' <g g'>8~ <g g'>4 a,,16( b) d8 |
 
 
 	
@@ -92,8 +93,13 @@
 	r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
-	<d g b>4 r4 r2 %blue
-	r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	<d g b>8 %blue
+	\change Staff = "down"
+	\stemUp
+	\skip 16 d,,,16 [ e g ] \skip 8 \skip 2
+	\change Staff = "up"
+	\stemNeutral
+	r4 <f''' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
 	<d g b>4 r4 <a c f g>4 <g c e g> %you
@@ -163,7 +169,7 @@
 	r16 <ais g'> b g f <d g> des c ais b g f r16 g8.
       }
 
-      \new Staff {
+      \new Staff = "down" {
 	\clef "bass"
 	\key g \major
 	
@@ -217,7 +223,7 @@
 	    <d d'>8 [ <f' a d> ] <a,, a'> [ <f'' a d> ]
 	    <g c e> [ <g, g'> ] <d d'> [ <fis' a d> ]
 	    <d g d'> [ <g, d' g> ] <d d'> [ <fis fis'> ]
-	    <g g'> [ <ais, ais'> ] <b b'> [ <c c'> ]
+	    <g g'> [ <ais, ais'> ] <b b'> [ <d' g b> ]
 		    
 	  }
 	  \new Voice = "second" %Melody bits
@@ -225,7 +231,7 @@
 				%Well I heard Neil Young
 				%sing about her
 	    \stemUp
-	    \skip 8 d''16 d \skip 4 e8 \skip 4 d16 d~
+	    \skip 8 d'16 d \skip 4 e8 \skip 4 d16 d~
 	    d8 b \skip 2.
 				%Heard ole Neil put her down
 	    \skip 8 d16 d \skip 4 e8 \skip 4 e16 d
@@ -240,11 +246,26 @@
 
 	\stemNeutral
 	
+				%Chorus 1
+				%Sweet Home Alabama
+	d,,8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	g8 <g g'> <b b'>16 <a a'>8. |
+	\ottava #0
+				%Where the skies are so blue
+	d8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 [ <c g'>8 ]
+	\ottava #-1 \stemDown
+	d,16~ | d e g \skip 8.
+	\ottava #0
+	d''16 [ e g ] r16 
       }
     >>
   }
   
   %Generate MIDI output
-  \midi{ \tempo 4 = 98}
+  %\midi{ \tempo 4 = 98}
 
 }
