@@ -78,9 +78,18 @@
 				%Hope Neil Young will remember
 	<a' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r
 	<g' b>4 <b d g> a,,16( b) d g~ g g a,( b)
+
+				%Southern man don't need him around
+				%anyhow
+	r8. d'16 <f a d>16 <e a d>8 <e a c>16~ <e a c>8 <d g c>8
+	<d g c> <d g c>16 <d g c> |
+	<d g b>4 ais16 b d <g g'>~
+	<g g'> d <fis fis'> d <f f'> d <e e'> b 
+
+	
 				%Chorus 1
 	\bar "||"
-	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
 	<d g b>4 r4 r2 %blue
@@ -231,6 +240,6 @@
   }
   
   %Generate MIDI output
-  %\midi{ \tempo 4 = 98}
+  \midi{ \tempo 4 = 98}
 
 }
