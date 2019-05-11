@@ -11,6 +11,8 @@
       \new Staff {
 	\clef treble
 	\key g \major
+	
+	r1
 				%Intro riff
 	\repeat volta 2 {
 	  <d, fis a d>2 <e g c e> <d g b d>4. r16
@@ -65,11 +67,17 @@
 				%See Troy Nelson transcription for
 				%"Southern Man" harmonization
 	\bar "||"
-	<a'' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r %Heard Neil Sing
+				%Heard Mister Sing
+	<a'' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r
 	<g' b>4 <b d g> a,,16( b) d g~ g g a,( b)
+				%Heard ole Neil put her down
+	<a'' d>4 f,8 e <g' c>4 d,8 r
+				%Breeze from Alabama
+	d'16 g b <d, b' d>~ <d b' d> <cis ais' cis> <d b' d>8
+	<d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
 				%Chorus 1
 	\bar "||"
-	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
 	<d g b>4 r4 r2 %blue
@@ -146,9 +154,10 @@
       \new Staff {
 	\clef "bass"
 	\key g \major
+	<f,, f'>2 <e e'>
 				%Intro riff
 	\repeat unfold 2 {
-	  d,,8 d d'16 a8 fis16 c8 c d'16 g,8 d16
+	  d8 d d'16 a8 fis16 c8 c d'16 g,8 d16
 	  g,8 g g'4 g,8 g g'4
 	}
 	d8 d d'16 a8 fis16 c8 c d'16 g,8 d16
@@ -171,20 +180,31 @@
 	}
 				%Second Verse
 	<<
-	  \new Voice = "first"
+	  \new Voice = "first" %Rag bass
 	  {
 	    \stemDown
+				%Well I heard Mister Young
+				%sing about her
 	    <d d'>8[ <f' a> ] <a,, a'> [ <f'' a d> ]
 	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
 	    <d g> [ <g, d'> ] <d d'> [ <fis fis'> ]
 	    <g g'> [ <fis fis'> ] <e e'> [ <dis dis'> ]
+				%Well I heard ole Neil put her down
+	    <d d'>8 [ <f' a> ] <a,, a'> [ <f'' a d> ]
+	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
+				%Breeze from Alabama
+	    \repeat unfold 2 {g,[ <d' g b> ] d, <d' g b>}
 	    
 	  }
-	  \new Voice = "second"
+	  \new Voice = "second" %Melody bits
 	  {
+				%Well I heard Neil Young
+				%sing about her
 	    \stemUp
-	    \skip 8 d''16 d \skip 4 e8 \skip 4 d16 d~
-	    d8 b \skip 4.
+	    \skip 8 d'16 d \skip 4 e8 \skip 4 d16 d~
+	    d8 b \skip 2.
+				%Heard ole Neil put her down
+	    \skip 8 d16 d \skip 4 e8 \skip 4 e16 d 
 	  }
 	>>
 
