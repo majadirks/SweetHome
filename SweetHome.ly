@@ -115,7 +115,7 @@
 	\bar "||"
 	
 				%Verse 3
-	\repeat unfold 16 <a d>8
+	\repeat unfold 8 <a d>8
 	\repeat unfold 4 <a d> % Birming
 	\repeat unfold 4 <g c> % ham loves the
 	\repeat unfold 4 <g b> %governor
@@ -283,11 +283,42 @@
 	<f f'>4
 	\ottava #0
 	<c' c'>
+
+				%Guitar Solo
+	\repeat unfold 2 {
+	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
+	<c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
+	  g [ <d'' g b> ] b, [ <d' g b> ]
+	  d, [ <d' g b> ] g, [ <d' g b> ] |
+	  }
+
+	%<d, d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
+	%<c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
+	%g [ <d'' g b> ] b, [ <d' g b> ]
+	%<g, g'>8 f'16 d~ d b c cis
+
+				%Verse 3
+	R1
+				%In Birmingham they love
+				%the governor
+	r8 d, f16 e8 e16~ e8 d d e16 d~ |
+	d8 b r4 <f' f'>4 <e e'> |
+				%Now we all did what we could do
+	<d d'>8 d f16 e8 e16~ e8 d d e16 d~|
+	d8 r8 \repeat unfold 6 {<d'' b>8}
+				%Watergate does not bother me
+	r8 d,,8 f16 e8. e4 d8 c d4 b4
+	\repeat unfold 4 {<d'' b>8} |
+				%Does your conscience bother you?
+	r4 f,,16 e8. e8 d d e16 d~ d4 d16 e8 dis16 d8 b g4
+
+				%Chorus 2
+	
       }
     >>
   }
   
   %Generate MIDI output
-  \midi{ \tempo 4 = 98}
+  %\midi{ \tempo 4 = 98}
 
 }
