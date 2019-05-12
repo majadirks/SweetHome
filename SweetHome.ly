@@ -294,7 +294,7 @@
 				%Guitar Solo
 	\repeat unfold 2 {
 	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
-	<c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
+	  <c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
 	  g [ <d'' g b> ] b, [ <d' g b> ]
 	  d, [ <d' g b> ] g, [ <d' g b> ] |
 	  }
@@ -358,6 +358,17 @@
 	<f f'>4
 	\ottava #0
 	<c' c'>
+
+				%Piano solo
+	\repeat unfold 6 {
+	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
+	  <c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
+	  g [ <d'' g b> ] b, [ <d' g b> ]
+	  d, [ <d' g b> ] g, [ <d' g b> ] |
+	  }
+	<d, d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
+	<c c'> [ <e' g c> ] <e g c> [ <c, c'> ]
+	<g g'>16 r8. r4 r2
       }
     >>
   }
