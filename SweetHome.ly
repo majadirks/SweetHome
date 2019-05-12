@@ -131,14 +131,21 @@
 	\repeat unfold 4 <a,, d>8 %Does your
 	\repeat unfold 4 <g c> %conscience bother
 	\repeat unfold 4 <g b> %you? Tell me
-	a16 b d g e d a b
+	a16 b d g e d a' b
 	
 				%Chorus 2
 	\bar "||"
-	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
-	<d g b>4 r4 r2 %blue
+	%blue
+	<d g b>4
+	\stemUp \change Staff = "down"
+	r16 d,, e g
+	\change Staff = "up"
+	r16 d' e g
+	r16 d' e g
+	\stemNeutral
 	r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>16 <d g c>8. <d g c> <e g c>16 %Lord .. to
@@ -310,10 +317,47 @@
 	r8 d,,8 f16 e8. e4 d8 c d4 b4
 	\repeat unfold 4 {<d'' b>8} |
 				%Does your conscience bother you?
-	r4 f,,16 e8. e8 d d e16 d~ d4 d16 e8 dis16 d8 b g4
+	r4 f,,16 e8. e8 d d e16 d~
+	d4 d16 e8 dis16 
+	\ottava #-1
+	d8 [ b ]  g8 [ 
+	\ottava #0
+	<d'' g b> ] |
 
 				%Chorus 2
-	
+				%Sweet Home Alabama
+	d,8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	g8 <g g'> <b b'>16 <a a'>8. |
+	\ottava #0
+				%Where the skies are so blue
+	d8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 [ <c g'>8 ]
+	\stemDown \ottava #-1
+	d,16~ | d
+	\ottava #0
+	d'16 e g
+	d16 \skip 8.
+	d'16 \skip 8.
+	d'16 \skip 8. |
+	\stemNeutral
+				%Sweet Home Alabama
+	d,,8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	g8 <g g'> <b b'>16 <a a'>8. |
+	\ottava #0
+				%Lord I'm coming home to you
+	d8 <d a'> <d b'>16 <d a'>8.
+	c8 <c g'> <c a'>16 <c g'>8. |
+	\ottava #-1
+	g8 <g d'> <g e'>16 <g d'>8.
+	<f f'>4
+	\ottava #0
+	<c' c'>
       }
     >>
   }
