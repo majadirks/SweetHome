@@ -47,7 +47,8 @@
 	r16 g16
 	a16( b) d g~ g g a,( b) %guitar riff
 	<<
-				%Miss Alabamy once again and I think it's a sin
+				%Miss Alabamy once again
+				%and I think it's a sin
 	  {r4 f'16 e8 e16~ e8 d d e16 d~ d8 d d e16 d~ d4}
 	  \\
 	  {\stemDown d4.. c16~ c4}
@@ -64,13 +65,19 @@
 
 
 	
-				%TODO: Neil Young verse goes here
-				%See Troy Nelson transcription for
-				%"Southern Man" harmonization
+		
+				%Second Verse RH
 	\bar "||"
-				%Heard Mister Sing
-	<a'' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r
-	<g' b>4 <b d g> a,,16( b) d g~ g g a,( b)
+				%Well I heard Mr Young
+				%sing about her
+	\new Voice = "first"
+	<< \stemUp
+	   { <a' d>2 <g c> <g b> s2}
+	\new Voice = "second"
+	   { \stemDown
+	     r8 d16 d f8 e16 e e4 e8 d16 d~ | d8 b r4
+	     \stemNeutral
+	     a16( b) d g~ g g a,( b) } | >>
 				%Heard ole Neil put her down
 	<a'' d>4 f,8 e <g' c>4 d,8 r
 				%Breeze from Alabama
@@ -178,6 +185,8 @@
 	r16 <ais g'> b g f <d g> des c ais b g f r16 g8.
       }
 
+				%Left Hand
+      
       \new Staff = "down" {
 	\clef "bass"
 	\key g \major
@@ -201,12 +210,12 @@
 
 				%Guitar riff
 	\repeat unfold 2 {
-	  <d d'>8[ <fis' a d> ] <a,, a'> [ <fis'' a c> ]
-	  <b, b'> [ <g g'> ] <e e'> [ <c c'>16 <cis cis'> ] |
+	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'>8 ]
+	  <c c'>8 [ <e' g c> ] <e g c> [ <c, c'> ] 
 	  <d d'>8 [ <b b'> ] <g g'> [ <d'' g b> ]
 	  a,16 b d e d b a' g
 	}
-				%Second Verse
+				%Second Verse LH
 	<<
 	  \new Voice = "first" %Rag bass
 	  {
