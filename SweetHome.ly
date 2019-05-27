@@ -344,7 +344,7 @@
 
 
 	<d, d'>8\accent <d d'> <d d'> <d d'>\tenuto (
-	<c c'>\accent ) <c c'> <c c'> <c c'>
+	<c c'>\accent ) <c c'> <c c'> <c c'>\tenuto
 	g8 [ <b' d g> ] d, [ <b' d g> ] g [ <b d g> ] g, [ <b' d g> ]
 
 	<d, d'>8 [ <fis' a d> ] <fis, fis'> [ <d d'> ]
