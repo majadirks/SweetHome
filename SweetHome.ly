@@ -55,7 +55,7 @@
 	>>
 	r4
 	
-				%Guitar riff
+				%Guitar riff RH
 	e16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
 	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
@@ -133,26 +133,18 @@
 	a8 r16 d,~ d dis e g a e g8 a8. g16
 	g e d e g d b8~ b16 g d8~ d16 d8.
 	\bar "||"
+
+				%Guitar riff RH
+	e16 eis fis <a d>~ <a d> <a d> fis e
+	d16 e <g c>8 <g c> e |
+	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
+	e,16 eis fis <a d>~ <a d> <a d> fis e
+	d16 e <g c>8 <g c> e |
+	ais,16 b d g~ g16 g' <g g'>8~ <g g'>4 a,,16( b) d8 |
 	
 				%Verse 3
-	\repeat unfold 8 <a d>8
-	\repeat unfold 4 <a d> % Birming
-	\repeat unfold 4 <g c> % ham loves the
-	\repeat unfold 4 <g b> %governor
-	r2 %Boo, boo
-	\repeat unfold 4 <a d>8 %We all
-	\repeat unfold 4 <a c>% did what we could
-	<g b> <g b> r8 e''16 g
-	<d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>16 b, c cis
-	\repeat unfold 4 <a d>8 %Water-
-	\repeat unfold 4 <g c>8 %gate does not
-	\repeat unfold 4 <g b> %bother me
-	a'16 b d e d b a' g
-	\repeat unfold 4 <a,, d>8 %Does your
-	\repeat unfold 4 <g c> %conscience bother
-	\repeat unfold 4 <g b> %you? Tell me
-	a16 b d g e d a' b
-	
+	\bar "||"
+	r1
 				%Chorus 2
 	\bar "||"
 	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
@@ -221,7 +213,7 @@
 	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	g,8 g <d' g>4 g,8 g <d' g>8 <d g>16 <d g>
 
-				%Guitar riff
+				%Guitar riff LH
 	\repeat unfold 2 {
 	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'>8 ]
 	  <c c'>8 [ <e' g c> ] <e g c> [ <c, c'> ] 
@@ -229,57 +221,16 @@
 	  a,16 b d e d b a' g
 	}
 				%Second Verse LH
-	<<
-	  \new Voice = "first" %Rag bass
-	  {
-	    \stemDown
-				%Well I heard Mister Young
-				%sing about her
-	    <d d'>8[ <f' a> ] <a,, a'> [ <f'' a d> ]
-	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
-	    <d g> [ <g, d'> ] <d d'> [ <fis fis'> ]
-	    <g g'> [ <fis fis'> ] <e e'> [ <dis dis'> ]
-				%Well I heard ole Neil put her down
-	    <d d'>8 [ <f' a> ] <a,, a'> [ <f'' a d> ]
-	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
-				%Breeze from Alabama
-	    \repeat unfold 2 {g,[ <d' g b> ] d, <d' g b>}
-				%Well I hope Neil Young
-				%will remember
-	    <d, d'>8[ <f' a> ] <a,, a'> [ <f'' a d> ]
-	    <g c> [ <g, g'> ] <d d'> [ <fis' a> ]
-	    <d g> [ <g, d'> ] <d d'> [ <fis fis'> ]
-	    <g g'> [ <fis fis'> ] <e e'> [ <dis dis'> ]
-				%Southern man don't need him around
-	    <d d'>8 [ <f' a d> ] <a,, a'> [ <f'' a d> ]
-	    <g c e> [ <g, g'> ] <d d'> [ <fis' a d> ]
-	    <d g d'> [ <g, d' g> ] <d d'> [ <fis fis'> ]
-	    <g g'> [ <ais, ais'> ] <b b'> [ <d' g b> ]
-		    
-	  }
-	  \new Voice = "second" %Melody bits
-	  {
-				%Well I heard Neil Young
-				%sing about her
-	    \stemUp
-	    \skip 8 d'16 d \skip 4 e8 \skip 4 d16 d~
-	    d8 b \skip 2.
-				%Heard ole Neil put her down
-	    \skip 8 d16 d \skip 4 e8 \skip 4 e16 d
-				%Breeze from Alabama
-	    \skip 1
-	    %Hope Neil Young will remember
-	    \skip 8 d16 d \skip 4 e8 \skip 4 d16 d~
-	    d8 b \skip 2.
-	
-	  }
-	>>
-
-	\stemNeutral
+	\repeat unfold 3 {
+	  d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	  g,8 g <d' g>4 g,8 g <d' g>4
+	}
+	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	g,8 g <d' g>4 <g, g'>8 [ <ais ais'> ] <b b'> [ <c c'> ]
 	
 				%Chorus 1
 				%Sweet Home Alabama
-	d,,8 <d a'> <d b'>16 <d a'>8.
+	d8 <d a'> <d b'>16 <d a'>8.
 	c8 <c g'> <c a'>16 <c g'>8. |
 	\ottava #-1
 	g8 <g d'> <g e'>16 <g d'>8.
@@ -321,34 +272,18 @@
 	  d, [ <d' g b> ] g, [ <d' g b> ] |
 	  }
 
-	%<d, d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
-	%<c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
-	%g [ <d'' g b> ] b, [ <d' g b> ]
-	%<g, g'>8 f'16 d~ d b c cis
-
+				%Guitar riff LH
+	\repeat unfold 2 {
+	  <d, d'>8 [ <fis' a d> ] <fis a d> [ <d, d'>8 ]
+	  <c c'>8 [ <e' g c> ] <e g c> [ <c, c'> ] 
+	  <d d'>8 [ <b b'> ] <g g'> [ <d'' g b> ]
+	  a,16 b d e d b a' g }
+	  
 				%Verse 3
-	R1
-				%In Birmingham they love
-				%the governor
-	r8 d, f16 e8 e16~ e8 d d e16 d~ |
-	d8 b r4 <f' f'>4 <e e'> |
-				%Now we all did what we could do
-	<d d'>8 d f16 e8 e16~ e8 d d e16 d~|
-	d8 r8 \repeat unfold 6 {<d'' b>8}
-				%Watergate does not bother me
-	r8 d,,8 f16 e8. e4 d8 c d4 b4
-	\repeat unfold 4 {<d'' b>8} |
-				%Does your conscience bother you?
-	r4 f,,16 e8. e8 d d e16 d~
-	d4 d16 e8 dis16 
-	\ottava #-1
-	d8 [ b ]  g8 [ 
-	\ottava #0
-	<d'' g b> ] |
-
+	r1 %TODO
 				%Chorus 2
 				%Sweet Home Alabama
-	d,8 <d a'> <d b'>16 <d a'>8.
+	d8 <d a'> <d b'>16 <d a'>8.
 	c8 <c g'> <c a'>16 <c g'>8. |
 	\ottava #-1
 	g8 <g d'> <g e'>16 <g d'>8.
