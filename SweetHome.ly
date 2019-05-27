@@ -295,7 +295,7 @@
 	g,8 g <d' g>4 g,8 g <d' g>4
 	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	g,8 g <d' g>4 g,8 g <d' g>4
-	<d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	\ottava #-1
 	g,8 g d'16 e8 dis16 d8 b g4
 	\ottava #0
