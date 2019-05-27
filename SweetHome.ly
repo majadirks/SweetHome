@@ -2,7 +2,8 @@
 
 \header {
   title = "Sweet Home Alabama"
-  composer = "Ed King, Gary Rosisngton, Roonie van Zant"
+  composer = "Ed King, Gary Rosisngton, Roonie van Zant (1973)"
+  arranger = "arr. Dirks (2019)"
 }
 
 \score {
