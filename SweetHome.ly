@@ -109,7 +109,7 @@
 
 	
 				%Chorus 1
-	\bar "||"
+	\bar "||" \mark \default
 	r4 <f a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
@@ -127,14 +127,14 @@
 	<d g b>4 r4 <a c f g>4 <g c e g> %you
 	
 				%Guitar solo
-	\bar "||"
+	\bar "||" \mark \default
 	fis'16 d a8 d4~ d16 a c ais a g a e
 	g8. g16 a e a8 r8. d16 e g a g
 	a8 r16 d,~ d dis e g a e g8 a8. g16
 	g e d e g d b8~ b16 g d8~ d16 d8.
-	\bar "||"
 
 				%Guitar riff RH
+	\bar "||"
 	e16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
 	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
@@ -149,9 +149,9 @@
 	d8 b r4 r2
 				%Now we all did what we could do
 	r8 d f16 e8 <c e>16~ <c e>8 d d e16 d~ |
-	d4 r8 e'16 g <d' b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
+	d4 r8 e'16 g <d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
 				%Now Watergate does not bother me
-	r8 d,, f16 e8 <c e>16~ <c e>4 d8 c |
+	r8 d, f16 e8 <c e>16~ <c e>4 d8 c |
 	d4 b a16 b d g~ g g a, b
 				%Does your conscience bother you
 	r4 f'16 e8. e8 d d e16 d~ d4 r4
