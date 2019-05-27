@@ -140,14 +140,25 @@
 	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
 	e,16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
-	ais,16 b d g~ g16 g' <g g'>8~ <g g'>4 a,,16( b) d8 |
+	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2
 	
 				%Verse 3
+	\bar "||" \mark \default
+				%In B'ham they love the governor
+	r8 d, f16 e8 <c e>16~ <c e>8 d d e16 d~ |
+	d8 b r4 r2
+				%Now we all did what we could do
+	r8 d f16 e8 <c e>16~ <c e>8 d d e16 d~ |
+	d4 r8 e'16 g <d' b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
+				%Now Watergate does not bother me
+	r8 d,, f16 e8 <c e>16~ <c e>4 d8 c |
+	d4 b a16 b d g~ g g a, b
+				%Does your conscience bother you
+	r4 f'16 e8. e8 d d e16 d~ d4 r4
+	a16 b d g e d a b
+					%Chorus 2
 	\bar "||"
-	r1
-				%Chorus 2
-	\bar "||"
-	r4 <f' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
+	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
 	%blue
@@ -280,7 +291,7 @@
 	  a,16 b d e d b a' g }
 	  
 				%Verse 3
-	r1 %TODO
+	\repeat unfold 8 {r1} %TODO
 				%Chorus 2
 				%Sweet Home Alabama
 	d8 <d a'> <d b'>16 <d a'>8.
