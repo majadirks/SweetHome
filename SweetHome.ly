@@ -24,8 +24,8 @@
 	  {<d, fis a d>2 <e g c e> <d g b d>
 	    ais16 b d g~ g4}}
 	
-				%First verse
-	\bar "||"
+				%First verse RH
+	\bar "||" \mark \default
 	<<
 	  {r4 f16 e8 e16~ e4 d16 d8 d16~ d8[ e]} % Big wheels keep on turnin'
 	  \\
@@ -67,7 +67,7 @@
 	
 		
 				%Second Verse RH
-	\bar "||"
+	\bar "||" \mark \default
 				%Well I heard Mr Young
 				%sing about her
 	\new Voice = "first"
@@ -78,14 +78,27 @@
 	     r8 d16 d f8 e16 e e4 e8 d16 d~ | d8 b r4
 	     \stemNeutral
 	     a16( b) d g~ g g a,( b) } | >>
-				%Heard ole Neil put her down
-	<a'' d>4 f,8 e <g' c>4 d,8 r
-				%Breeze from Alabama
-	d'16 g b <d, b' d>~ <d b' d> <cis ais' cis> <d b' d>8
-	<d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8
-				%Hope Neil Young will remember
-	<a' d>4 \grace e,16 f8 e16 e <e' g c>4 e,8 r
-	<g' b>4 <b d g> a,,16( b) d g~ g g a,( b)
+				%Well I heard ole Neil put her down
+	\new Voice = "first"
+	<< \stemUp
+	   { <a' d>2 <g c> <g b>4 s4 s2}
+	   \new Voice = "second"
+	   { \stemDown
+	     r8 d16 d f16 e8 e16~ e8 d d e16 d~ | d4 r8
+	     \stemNeutral
+	     e'16 g
+	     <d b'>16 <cis ais'> <c a'> <b g'>~ <b g'>8 r8}>> |
+
+				%Well I hope Neil Young
+				%will remember
+	\new Voice = "first"
+	<< \stemUp
+	   { <a d>2 <g c> <g b> s2}
+	\new Voice = "second"
+	   { \stemDown
+	     r8 d16 d f8 e16 e e4 e8 d16 d~ | d8 b r4
+	     \stemNeutral
+	     a16( b) d g~ g g a,( b) } | >>
 
 				%Southern man don't need him around
 				%anyhow
