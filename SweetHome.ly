@@ -164,7 +164,7 @@
 	%blue
 	<d g b>4
 	\stemUp \change Staff = "down"
-	r16 d,, e g
+	r16 d,,^"RH" e g
 	\change Staff = "up"
 	r16 d' e g
 	r16 d' e g
@@ -290,11 +290,20 @@
 	  <d d'>8 [ <b b'> ] <g g'> [ <d'' g b> ]
 	  a,16 b d e d b a' g }
 	  
-				%Verse 3
-	\repeat unfold 8 {r1} %TODO
+				%Verse 3 LH
+	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	g,8 g <d' g>4 <f f'> <e e'>
+	\repeat unfold 2 {
+	  <d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	  g,8 g <d' g>4 g,8 g <d' g>4 }
+	<d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	\ottava #-1
+	g,8 g d'16 e8 dis16 d8 b g4
+	\ottava #0
+	
 				%Chorus 2
 				%Sweet Home Alabama
-	d8 <d a'> <d b'>16 <d a'>8.
+	d'8 <d a'> <d b'>16 <d a'>8.
 	c8 <c g'> <c a'>16 <c g'>8. |
 	\ottava #-1
 	g8 <g d'> <g e'>16 <g d'>8.
@@ -307,9 +316,9 @@
 	d,16~ | d
 	\ottava #0
 	d'16 e g
-	d16 \skip 8.
-	d'16 \skip 8.
-	d'16 \skip 8. |
+	d16 r8.
+	d'16 r8.
+	d'16 r8. |
 	\stemNeutral
 				%Sweet Home Alabama
 	d,,8 <d a'> <d b'>16 <d a'>8.
