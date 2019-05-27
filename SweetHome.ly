@@ -12,6 +12,7 @@
       \new Staff = "up" {
 	\clef treble
 	\key g \major
+	\tempo 4 = 98
 	
 	\partial 2 r2
 				%Intro riff
