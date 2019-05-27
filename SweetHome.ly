@@ -58,10 +58,10 @@
 				%Guitar riff RH
 	e16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
-	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
+	ais,16 b d g~ g16 g'~ <g g'>8~ <g g'>2 |
 	e,16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
-	ais,16 b d g~ g16 g' <g g'>8~ <g g'>4 a,,16( b) d8 |
+	ais,16 b d g~ g16 g'~ <g g'>8~ <g g'>4 a,,16( b) d8 |
 
 
 	
@@ -137,10 +137,10 @@
 	\bar "||"
 	e16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
-	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2 |
+	ais,16 b d g~ g16 g'~ <g g'>8~ <g g'>2 |
 	e,16 eis fis <a d>~ <a d> <a d> fis e
 	d16 e <g c>8 <g c> e |
-	ais,16 b d g~ g16 g' <g g'>8~ <g g'>2
+	ais,16 b d g~ g16 g'~ <g g'>8~ <g g'>2
 	
 				%Verse 3
 	\bar "||" \mark \default
@@ -157,7 +157,7 @@
 	r4 f'16 e8. e8 d d e16 d~ d4 r4
 	a16 b d g e d a b
 					%Chorus 2
-	\bar "||"
+	\bar "||" \mark \default
 	r4 <f'' a c>4 <e g c> <d g c>8. <c g' c>16 %Sweet Home Ala-
 	<d g b>8 <b g' b> r4 a,16( b) d e( d) c8. %-bama
 	r4 <f' a c>8 <e a c> <e g c>4 <d g c>8 <c g' c>16 <d g b>~ %Where the skies are so
@@ -175,7 +175,7 @@
 	<d g b>4 r4 <a c f g>4 <g c e g> %you
 	
 				%Piano Solo
-	\bar "||"
+	\bar "||" \mark \default
 	gis16 a fis' gis, a fis' gis, a
 	fis g e' fis, g e' fis, g
 	cis, d b' cis, d b' cis, d
@@ -217,12 +217,10 @@
 	g,8 g g'4 <d d'>8 <b b'> <g g'>4
 
 				%First Verse
-	\repeat unfold 3 {
+	\repeat unfold 4 {
 	  d'8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	  g,8 g <d' g>4 g,8 g <d' g>4
 	}
-	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
-	g,8 g <d' g>4 g,8 g <d' g>8 <d g>16 <d g>
 
 				%Guitar riff LH
 	\repeat unfold 2 {
@@ -293,9 +291,10 @@
 				%Verse 3 LH
 	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	g,8 g <d' g>4 <f f'> <e e'>
-	\repeat unfold 2 {
-	  <d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
-	  g,8 g <d' g>4 g,8 g <d' g>4 }
+	<d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	g,8 g <d' g>4 g,8 g <d' g>4
+	d8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
+	g,8 g <d' g>4 g,8 g <d' g>4
 	<d d'>8 d <a' d>8. <a d>16 c,8 c <g' d'>8. <g d'>16
 	\ottava #-1
 	g,8 g d'16 e8 dis16 d8 b g4
@@ -337,12 +336,28 @@
 	<c' c'>
 
 				%Piano solo
-	\repeat unfold 6 {
+	\repeat unfold 2 {
 	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
 	  <c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
-	  g [ <d'' g b> ] b, [ <d' g b> ]
-	  d, [ <d' g b> ] g, [ <d' g b> ] |
+	  g8 [ <b' d g> ] d, [ <b' d g> ] g [ <b d g> ] g, [ <b' d g> ]
 	  }
+
+
+	<d, d'>8\accent <d d'> <d d'> <d d'>\tenuto (
+	<c c'>\accent ) <c c'> <c c'> <c c'>
+	g8 [ <b' d g> ] d, [ <b' d g> ] g [ <b d g> ] g, [ <b' d g> ]
+
+	<d, d'>8 [ <fis' a d> ] <fis, fis'> [ <d d'> ]
+	<c c'> [ <e' g c> ]
+	\ottava #-1 <e,, e'> [ <f f'> ] \ottava #0
+	g [ <b' d g> ] d, [ <b' d g>  ] g, [ <g' b d> ] d [ <g b d> ]
+	
+	\repeat unfold 2 {
+	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
+	  <c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
+	  g8 [ <b' d g> ] d, [ <b' d g> ] g [ <b d g> ] g, [ <b' d g> ]
+	  }
+	
 	<d, d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
 	<c c'> [ <e' g c> ] <e g c> [ <c, c'> ]
 	<g g'>16 r8. r4 r2
