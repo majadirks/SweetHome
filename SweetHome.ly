@@ -329,8 +329,8 @@
 	\repeat unfold 2 {
 	  <d d'>8 [ <fis' a d> ] <fis a d> [ <d, d'> ]
 	  <c c'> [ <e' g c> ] <e g c> [ <c, c'> ] |
-	  g [ <d'' g b> ] b, [ <d' g b> ]
-	  d, [ <d' g b> ] g, [ <d' g b> ] |
+	  g [ <d'' g b> ] d, [ <d' g b> ]
+	  g, [ <d' g b> ] g,, [ <d'' g b> ] |
 	  }
 
 				%Guitar riff LH
