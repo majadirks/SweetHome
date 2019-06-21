@@ -229,30 +229,31 @@
 
 				%Waltz intro LH
 	\time 3/4
+	\set Staff.pedalSustainStyle = #'bracket
 	\repeat volta 2 {
-	  <d,, d'>4 <f' a d> <f a d>
-	  <c, c'> <e' g c> <e g c>
-	  <g,, g'> <b' d g> <b d g>
-	  <d,, d'> <b'' d g> <b d g>
+	  <d,, d'>4\sustainOn <f' a d> <f a d>
+	  <c, c'>\sustainOff \sustainOn <e' g c> <e g c>
+	  <g,, g'>\sustainOff \sustainOn <b' d g> <b d g> 
+	  <d,, d'>\sustainOff \sustainOn <b'' d g> <b d g>\sustainOff
 	  }
 	
-	<d, d'>4 <f' a d> <f a d>
-	<c, c'> <e' g c> <e g c>
-	<g,, g'> <b' d g> <b d g>
-	<d,, d'> <b'' d g> <b d g>
-
-	<d, d'>4 <f' a d> <f a d>
-	<c, c'> <e' g c> <e g c>
-	<g,, g'> <b' d g> <b d g>
+	<d, d'>4 \sustainOn <f' a d> <f a d>
+	<c, c'>\sustainOff \sustainOn <e' g c> <e g c>
+	<g,, g'>\sustainOff \sustainOn <b' d g> <b d g> 
+	<d,, d'>\sustainOff \sustainOn <b'' d g> <b d g>\sustainOff
+	
+	<d, d'>4 \sustainOn <f' a d> <f a d>
+	<c, c'> \sustainOff \sustainOn <e' g c> <e g c>
+	<g,, g'> \sustainOff \sustainOn <b' d g> <b d g> \sustainOff
 	<a, a'> <b b'> <c c'>
 	
-	<d d'>4 <f' a d> <f a d>
-	<c, c'> <e' g c> <e g c>
-	<g,, g'> <b' d g> <b d g>
-	<d,, d'> <b'' d g> <b d g>
+	<d d'>4 \sustainOn <f' a d> <f a d>
+	<c, c'> \sustainOff \sustainOn <e' g c> <e g c>
+	<g,, g'> \sustainOff \sustainOn <b' d g> <b d g>
+	<d,, d'> \sustainOff \sustainOn <b'' d g> <b d g> \sustainOff
 
-	<d, d'>4 <f' a d> <f a d>
-	<c, c'> <e' g c> <e g c>
+	<d, d'>4 \sustainOn <f' a d> <f a d>
+	<c, c'> \sustainOff \sustainOn <e' g c> <e g c> \sustainOff
 	<ais,, ais'>8 <b b'> <b' d g>4 <b d g>
 
 	<b d g>2.\fermata
