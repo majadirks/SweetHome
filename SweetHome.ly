@@ -13,7 +13,7 @@
       \new Staff = "up" {
 	\clef treble
 	\key g \major
-	\tempo 4 = 120
+	\tempo 4 = 130
 
 				%Waltz intro RH
 	\time 3/4
@@ -418,6 +418,6 @@
   }
   
   %Generate MIDI output
-  %\midi{ \tempo 4 = 98}
+  %\midi{}
 
 }
