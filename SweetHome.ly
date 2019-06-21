@@ -9,13 +9,32 @@
   \relative c'' {
     \new PianoStaff
     <<
+  
       \new Staff = "up" {
 	\clef treble
 	\key g \major
-	\tempo 4 = 98
-	
-	\partial 2 r2
+	\tempo 4 = 120
+
+				%Waltz intro RH
+	\time 3/4
+	\repeat volta 2 {r2. r2. r2. r2.}
+	<f a c>2.
+	<e g c>4 <d g c> <c g' c>
+	<d g c> <b g' b>2~ <b g' b>2.
+	r4 <f' a c>4 <e a c>
+	<e g c>2 <d g c>8 <c g' c>
+	<d g b>2. r2.
+	r4 <f a c>4 <e a c>
+	<e g c>2 <d g c>8 <c g' c>
+	<d g b>4 <b g' b>2~ <b g' b>2.
+	<f' a c>2 <e a c>4
+	<e g c>8 <d g c>8~ <d g c>4 <d g c>8 <e g c>
+	<d g b>2.~ <d g b>2.\fermata
+
+	\time 2/4 r2\fermata
 				%Intro riff
+	\tempo 4 = 98
+	\time 4/4
 	\repeat volta 2 {
 	  <d, fis a d>2 <e g c e> <d g b d>4. r16
 	  g,16 a( b) d e( d) b a'( g)}
@@ -207,9 +226,41 @@
       \new Staff = "down" {
 	\clef "bass"
 	\key g \major
+
+				%Waltz intro LH
+	\time 3/4
+	\repeat volta 2 {
+	  <d,, d'>4 <f' a d> <f a d>
+	  <c, c'> <e' g c> <e g c>
+	  <g,, g'> <b' d g> <b d g>
+	  <d,, d'> <b'' d g> <b d g>
+	  }
 	
-	\partial 2 <f,, f'>4 <e e'>
+	<d, d'>4 <f' a d> <f a d>
+	<c, c'> <e' g c> <e g c>
+	<g,, g'> <b' d g> <b d g>
+	<d,, d'> <b'' d g> <b d g>
+
+	<d, d'>4 <f' a d> <f a d>
+	<c, c'> <e' g c> <e g c>
+	<g,, g'> <b' d g> <b d g>
+	<a, a'> <b b'> <c c'>
+	
+	<d d'>4 <f' a d> <f a d>
+	<c, c'> <e' g c> <e g c>
+	<g,, g'> <b' d g> <b d g>
+	<d,, d'> <b'' d g> <b d g>
+
+	<d, d'>4 <f' a d> <f a d>
+	<c, c'> <e' g c> <e g c>
+	<ais,, ais'>8 <b b'> <b' d g>4 <b d g>
+
+	<b d g>2.\fermata
+	
+	\time 2/4  <f f'>4\fermata <e e'>\fermata
+
 				%Intro riff
+	\time 4/4
 	\repeat unfold 2 {
 	  d8 d d'16 a8 fis16 c8 c d'16 g,8 d16
 	  g,8 g g'4 g,8 g g'4
