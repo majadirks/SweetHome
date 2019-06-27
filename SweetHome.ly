@@ -2,7 +2,7 @@
 
 \header {
   title = "Sweet Home Alabama"
-  composer = "Ed King, Gary Rosisngton, Roonie van Zant"
+  composer = "Ed King, Gary Rossington, Roonie van Zant"
 }
 
 \score {
