@@ -36,12 +36,15 @@
 	\tempo 4 = 98
 	\time 4/4
 	\repeat volta 2 {
-	  <d, fis a d>4 r <e g c e> r <d g b d> r8.
+	  <d, fis a d>4\espressivo r <e g c e>\espressivo r
+	  <d g b d>\espressivo r8.
 	  g,16 a( b) d e( d) b a'( g)}
 	\alternative {
-	  {<d fis a d>4 r <e g c e> r <d g b d> r8.
+	  {<d fis a d>4\espressivo r <e g c e>\espressivo r
+	    <d g b d>\espressivo r8.
 	    g16 a( g) g b( g) d c'( d)}
-	  {<d, fis a d>4 r <e g c e> r <d g b d> r
+	  {<d, fis a d>4\espressivo r <e g c e>\espressivo r
+	    <d g b d>\espressivo r
 	    ais16 b d g~ g4}}
 	
 				%First verse RH
@@ -219,6 +222,8 @@
 	<e c'> <d b'> <cis ais'> <c a'> r16 <b g'>8~ <b g'>16
 	<f'' a>16 fis d <gis c> a d, <f a> fis <dis c'> e c <g' c>~ <g c>8 <g c>
 	r16 <ais g'> b g f <d g> des c ais b g f r16 g8.
+	
+	\bar "|." %Ending bar mark
       }
 
 				%Left Hand
