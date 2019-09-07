@@ -36,12 +36,12 @@
 	\tempo 4 = 98
 	\time 4/4
 	\repeat volta 2 {
-	  <d, fis a d>2 <e g c e> <d g b d>4. r16
+	  <d, fis a d>4 r <e g c e> r <d g b d> r8.
 	  g,16 a( b) d e( d) b a'( g)}
 	\alternative {
-	  {<d fis a d>2 <e g c e> <d g b d>4. r16
+	  {<d fis a d>4 r <e g c e> r <d g b d> r8.
 	    g16 a( g) g b( g) d c'( d)}
-	  {<d, fis a d>2 <e g c e> <d g b d>
+	  {<d, fis a d>4 r <e g c e> r <d g b d> r
 	    ais16 b d g~ g4}}
 	
 				%First verse RH
